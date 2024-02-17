@@ -12,5 +12,10 @@ public class HelloWorldController {
     public String getIndex() {
         return "<h1>Hello World!!</h1>";
     }
-    
+
+    @RequestMapping("/welcome")
+    @ResponseBody
+    public String getWelComePage() {
+        return "<h2>Welcome!</h2>";
+    }
 }
